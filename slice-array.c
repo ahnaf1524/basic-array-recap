@@ -6,6 +6,9 @@ int main() {
   int slice_arr[6];
   int starting, ending;
   scanf("%d %d", &starting, &ending);
+  // 1 index
+  starting -= 1;
+  ending -= 1;
   int len = 0;
   for (int i = starting; i <= ending; ++i) {
     slice_arr[len++] = arr[i];
